@@ -34,10 +34,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void startGalleryActivity() {
         ArrayList<String> images = new ArrayList<String>();
-        images.add("http://i.telegraph.co.uk/multimedia/archive/01421/flickr-pix6_1421814c.jpg");
-        images.add("http://farm1.staticflickr.com/162/416152814_8f7ffb4bb1_z.jpg");
-        images.add("http://a1.dspnimg.com/data/l/1627610726061_S8WvSbhk_l.jpg");
-        images.add("https://c4.staticflickr.com/8/7432/10111952905_7e58ecb32f_b.jpg");
+        images.add("http://sourcey.com/images/stock/salvador-dali-metamorphosis-of-narcissus.jpg");
+        images.add("http://sourcey.com/images/stock/salvador-dali-the-dream.jpg");
+        images.add("http://sourcey.com/images/stock/salvador-dali-persistence-of-memory.jpg");
+        images.add("http://sourcey.com/images/stock/simpsons-persistence-of-memory.jpg");
+        images.add("http://sourcey.com/images/stock/salvador-dali-the-great-masturbator.jpg");
         Intent intent = new Intent(MainActivity.this, GalleryActivity.class);
         intent.putStringArrayListExtra(GalleryActivity.EXTRA_NAME, images);
         startActivity(intent);
